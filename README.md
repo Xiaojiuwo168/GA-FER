@@ -6,6 +6,7 @@ Code implementation of GECCO 2022 paper "Neural architecture search using geneti
 - Pytorch
 
 Torch 1.1.0 or higher and torchvision 0.11.2 or higher are required.
+
 (Example: torch == 1.10.1,  torchvision  == 0.11.2,  numpy == 1.19.5)
 
 ## How to run
