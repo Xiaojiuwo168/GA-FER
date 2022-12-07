@@ -32,8 +32,8 @@ Torch 1.1.0 or higher and torchvision 0.11.2 or higher are required.
           The changes that need to be made are on lines 47 and 48 of the cifar10.py file in the template file.**
 
 ```
-        trainloader = data_loader.get_train_loader('/home/dengshuchao/datasets/RafDb/raf-basic/',64,1,True,True)
-        validloader = data_loader.get_valid_loader('/home/dengshuchao/datasets/RafDb/raf-basic/',64,1,False,True)
+  trainloader = data_loader.get_train_loader('/home/dengshuchao/datasets/RafDb/raf-basic/',64,1,True,True)
+  validloader = data_loader.get_valid_loader('/home/dengshuchao/datasets/RafDb/raf-basic/',64,1,False,True)
 ```
 
 **Step 3. Set hyperparameters in *global.ini*.**
