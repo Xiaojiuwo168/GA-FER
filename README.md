@@ -25,9 +25,15 @@ Torch 1.1.0 or higher and torchvision 0.11.2 or higher are required.
 ```
 
 2. Set hyperparameters in *global.ini*.
+
+Ensure the following status before running：
+
+[evolution_status]
+is_running = 0
+
 3. Run `python GA-FER-evolve.py`.
 
-If you have any questions, please feel free to raise an "issue" for discussion.
+If you have any questions, please feel free to raise "issues" for discussion.
 
 ## Citing GA-FER
 
