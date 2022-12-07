@@ -10,7 +10,7 @@ Torch 1.1.0 or higher and torchvision 0.11.2 or higher are required.
 
 ## How to run
 
-1. Data Preparation
+Setp 1. Data Preparation
 
   Download basic emotions dataset of [RAF-DB](http://www.whdeng.cn/RAF/model1.html#dataset), and make sure it have a structure like following:
  
@@ -26,14 +26,23 @@ Torch 1.1.0 or higher and torchvision 0.11.2 or higher are required.
              ...
 ```
 
-2. Set hyperparameters in *global.ini*.
+
+Step 2. Then you need to change the path where the data is loaded to the path of the dataset you downloaded.
+   The changes that need to be made are on lines 47 and 48 of the cifar10.py file in the templates file.
+
+```
+        trainloader = data_loader.get_train_loader('/home/dengshuchao/datasets/RafDb/raf-basic/',64,1,True,True)
+        validloader = data_loader.get_valid_loader('/home/dengshuchao/datasets/RafDb/raf-basic/',64,1,False,True)
+```
+
+Step 3. Set hyperparameters in *global.ini*.
 
 Ensure the following status before running：
 
 [evolution_status]
 is_running = 0
 
-3. Run `python GA-FER-evolve.py`.
+Step 4. Run `python GA-FER-evolve.py`  or `nohup python -u GA-FER-evolve.py > GA-FER-evolve.log 2>&1 &`
 
 If you have any questions, please feel free to raise "issues" for discussion.
 
