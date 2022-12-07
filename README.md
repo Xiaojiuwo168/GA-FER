@@ -3,13 +3,29 @@
 Code implementation of GECCO 2022 paper "Neural architecture search using genetic algorithm for facial expression recognition".
 
 ## Requirements
+- Pytorch
 
-torch == 1.10.1,  torchvision  == 0.11.2,  numpy == 1.19.5
+Torch 1.1.0 or higher and torchvision 0.11.2 or higher are required.
+(Example: torch == 1.10.1,  torchvision  == 0.11.2,  numpy == 1.19.5)
 
 ## How to run
 
-1. Set hyperparameters in *global.ini*.
-2. Run `python GA-FER-evolve.py`.
+1. Data Preparation
+
+  Download basic emotions dataset of [RAF-DB](http://www.whdeng.cn/RAF/model1.html#dataset), and make sure it have a structure like following:
+ 
+```
+- datasets/raf-basic/
+         EmoLabel/
+             list_patition_label.txt
+         Image/aligned/
+	     train_00001_aligned.jpg
+             test_0001_aligned.jpg
+             ...
+```
+
+2. Set hyperparameters in *global.ini*.
+3. Run `python GA-FER-evolve.py`.
 
 If you have any questions, please feel free to raise an "issue" for discussion.
 
