@@ -4,9 +4,7 @@ Code implementation of GECCO 2022 paper "Neural architecture search using geneti
 
 ## Requirements
 
-torch == 1.10.1    
-torchvision  == 0.11.2
-numpy == 1.19.5
+torch == 1.10.1,  torchvision  == 0.11.2,  numpy == 1.19.5
 
 ## How to run
 
