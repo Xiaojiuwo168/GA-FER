@@ -28,8 +28,8 @@ Torch 1.1.0 or higher and torchvision 0.11.2 or higher are required.
 ```
 
 
-**Step 2. Then you need to change the path where the data is loaded to the path of the dataset you downloaded.
-          The changes that need to be made are on lines 47 and 48 of the cifar10.py file in the template file.**
+**Step 2. Then you need to change the path where the dataset is loaded to your dataset path.
+          The changes can be found on lines 47 and 48 of the cifar10.py file in the template folder.**
 
 ```
   trainloader = data_loader.get_train_loader('/home/dengshuchao/datasets/RafDb/raf-basic/',64,1,True,True)
@@ -41,6 +41,7 @@ Torch 1.1.0 or higher and torchvision 0.11.2 or higher are required.
 Ensure the following status before running：
 
 [evolution_status]
+
 is_running = 0
 
 **Step 4. Run `python GA-FER-evolve.py`  or `nohup python -u GA-FER-evolve.py > GA-FER-evolve.log 2>&1 &`**
