@@ -18,6 +18,8 @@ Torch 1.1.0 or higher and torchvision 0.11.2 or higher are required.
 - datasets/raf-basic/
          EmoLabel/
              list_patition_label.txt
+	     new_10_noise.txt
+	     new_20_noise.txt
          Image/aligned/
 	     train_00001_aligned.jpg
              test_0001_aligned.jpg
