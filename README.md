@@ -29,7 +29,7 @@ Torch 1.1.0 or higher and torchvision 0.11.2 or higher are required.
 
 
 **Step 2. Then you need to change the path where the dataset is loaded to your dataset path.
-          The changes can be found on lines 47 and 48 of the cifar10.py file in the template folder.**
+          The changes can be found on lines 71 and 72 of the cifar10.py file in the template folder.**
 
 ```
   trainloader = data_loader.get_train_loader('/home/dengshuchao/datasets/RafDb/raf-basic/',64,1,True,True)
